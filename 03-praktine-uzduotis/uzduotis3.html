@@ -1,31 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>News 3</title>
 
     <style>
-
-
-
+            * {
+        box-sizing: border-box;
+        }
+        body {
+            margin: 0px;
+        }
+        .rss {
+            width: 20px;
+        }
+        h1 {
+            color: #ff0000;
+        }        
+        button {
+            background-color: #ff0000;
+            color: #ffffff;
+            border-radius: 10%;
+            width: 80px;
+            height: 30px;
+        }
+        header {
+            background-color: #d3d1d1;
+            width: 100%;
+            padding: 20px;
+        }        
+        .container {
+            width: 100%;
+            display: flex;
+            padding: 10px;
+            border-bottom: 2px solid #000000;
+        }
+        .nav {
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+        .box {
+            padding-right: 90px;
+            padding-top: 20px;
+        }        
+        .nav1 {
+            width: 500px;
+        }
+        .nav2 {
+            width: 700px;
+        }
+        .nav3 {
+            width: 200px;
+            text-align: center;
+        }
+        .nav4 {
+            width: 200px;
+            text-align: center;
+        }
+        .nav5 {
+            width: 200px;
+            text-align: center;
+        }
+        .calendar1 {
+            width: 20px;
+        }
+        .arrow-up {
+            display: inline-block;
+            transform: rotate(270deg);
+        }
+        .arrow-down {
+            display: inline-block;
+            transform: rotate(90deg);
+        }
+        .cal-body {
+            padding-bottom: 20px;
+            margin: 0px;
+            width: 90px;
+        }             
+        .topcal {
+            background-color: #ff0000;
+            color: #ffffff;            
+            text-align: center;
+            font-size: 14px;
+            height: 20px;
+            border: 2px solid #000000;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .midcal {
+            padding: 10px;
+            color: #ff0000;
+            font-size: 55px;
+            font-weight: bold;
+            text-align: center;
+            border-left: 2px solid #000000;
+            border-right: 2px solid #000000;
+            height: 80px;
+        }
+        .botcal {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            font-size: 14px;
+            height: 20px;
+            border: 2px solid #000000;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        .article {
+            display: block;
+            border-left: 2px solid #000000;
+            padding-left: 10px;
+        }
+        a {
+            color: #0051ff;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .coments {
+            color: #808080;
+        }
+           
     </style>
-
 </head>
 
 <body>
 
     <header>
+        <div class="nav">
+            <div class="nav1">
+                <h1><img class="rss" src="./03-praktine-uzduotis/img/rss.png" alt="rss"> Mama mia</h1>
+            </div>
+            <div class="nav2"><a href="">Here i go again?</a></div>
+            <div class="nav3"> <button type="button">My</button> </div>
+            <div class="nav4"><a href="">My</a></div>
+            <div class="nav5"><a href="">How can I resist you</a></div>
+        </div>
 
     </header>
 
     <main>
 
+        <div class="container">
+            <div class="box">
+                <div class="calendar1">
+                    <div class="cal-body">
+                        <div class="topcal">My <div class="arrow-up">»</div>
+                        </div>
+                        <div class="midcal">99</div>
+                        <div class="botcal">My <div class="arrow-down">»</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article">
+                <p>
+                    <h2>Mamma mia, does it show again
+                        My, my, just how much I've missed you? <a href="">&#187;</a>
+                    </h2>
+                </p>
+                <p>Yes, I've been brokenhearted
+                    Blue since the day we parted
+                    Why, why did I ever let you go?
+                    Mamma mia, now I really know
+                    My, my, I could never let you go</p>
+                <p><a href="">I've been angry</a>| <a href="">And</a><span class="coments">(0)</span> | <a href="">Sad about things that you do</a> </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="box">
+                <div class="calendar1">
+                    <div class="cal-body">
+                        <div class="topcal">My <div class="arrow-up">»</div>
+                        </div>
+                        <div class="midcal">98</div>
+                        <div class="botcal">My <div class="arrow-down">»</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article">
+                <p>
+                    <h2>Mamma mia, does it show again
+                        My, my, just how much I've missed you? <a href="">&#187;</a>
+                    </h2>
+                </p>
+                <p>Yes, I've been brokenhearted
+                    Blue since the day we parted
+                    Why, why did I ever let you go?
+                    Mamma mia, now I really know
+                    My, my, I could never let you go</p>
+                <p><a href="">I've been angry</a>| <a href="">And</a><span class="coments">(0)</span> | <a href="">Sad about things that you do</a> </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="box">
+                <div class="calendar1">
+                    <div class="cal-body">
+                        <div class="topcal">My <div class="arrow-up">»</div>
+                        </div>
+                        <div class="midcal">97</div>
+                        <div class="botcal">My <div class="arrow-down">»</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article">
+                <p>
+                    <h2>Mamma mia, does it show again
+                        My, my, just how much I've missed you? <a href="">&#187;</a>
+                    </h2>
+                </p>
+                <p>Yes, I've been brokenhearted
+                    Blue since the day we parted
+                    Why, why did I ever let you go?
+                    Mamma mia, now I really know
+                    My, my, I could never let you go</p>
+                <p><a href="">I've been angry</a>| <a href="">And</a><span class="coments">(0)</span> | <a href="">Sad about things that you do</a> </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="box">
+                <div class="calendar1">
+                    <div class="cal-body">
+                        <div class="topcal">My <div class="arrow-up">»</div>
+                        </div>
+                        <div class="midcal">96</div>
+                        <div class="botcal">My <div class="arrow-down">»</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article">
+                <p>
+                    <h2>Mamma mia, does it show again
+                        My, my, just how much I've missed you? <a href="">&#187;</a>
+                    </h2>
+                </p>
+                <p>Yes, I've been brokenhearted
+                    Blue since the day we parted
+                    Why, why did I ever let you go?
+                    Mamma mia, now I really know
+                    My, my, I could never let you go</p>
+                <p><a href="">I've been angry</a>| <a href="">And</a><span class="coments">(0)</span> | <a href="">Sad about things that you do</a> </p>
+            </div>
+        </div>
+
     </main>
 
     <footer>
-        
+
         <P>
             Laurynas Savickas &copy; 2021 All rights reserved
         </P>
@@ -37,4 +273,5 @@
     </footer>
 
 </body>
+
 </html>
