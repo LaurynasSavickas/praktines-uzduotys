@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        @media only screen and (min-width: 600px) {
+            body {
+            padding: 2em;
+            }
+            .col-1 {
+                width: 33%;
+                max-width: 20em;
+                display: table-cell;            
+                background-color: none;
+                float: left;
+                margin: 0%;
+                padding: 0%;
+                border-collapse: collapse;               
+            }
+            .col-2 {
+                width: 20%;
+                float: left;
+                margin: 1em;
+                border-collapse: collapse;
+                text-align: justify;
+            }
+                .col-3 {
+                width: 20%;
+                float: left;
+                margin: 1em ;
+                border-collapse: collapse;
+                text-align: justify;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+            margin: 0%;
+            background-color: none;
+            }
+            .img {
+                display: none;
+            }            
+            .col-2 {
+                width: 50%;
+                float: left;
+                background-color: none;
+                margin: 1em;            
+                text-align: justify;
+            }
+            .col-3 {
+                    width: 50%;
+                    float: left;
+                    margin: 1em ;
+                    border-collapse: collapse;
+                    text-align: justify;
+            }
+        }
+        .conteiner {
+            position: center;
+            display: flex;
+            content: "";
+            clear: both;
+            display: table;
+            background-color: none; 
+            display: flex;
+            align-items: center;
+            justify-content: center;           
+        }        
+        img {            
+            margin: 0;
+            width: 100%;
+        }
+        .main-h1 {
+            font-size: 6em;
+            text-align: center;
+            text-transform: uppercase;
+            color: #4d5259;
+            margin-bottom: 1.17em;
+        }
+        .headline-h1 {
+            font: 4em  sans-serif ;
+            text-align: center;
+            text-transform: uppercase;
+            color: #4d5259;
+            margin: 0.5em;
+        }
+        .nav {
+            display: table;
+            padding: 0px;
+            width: 95%;
+            margin-left: 2em;
+            background-color: #142af5;
+            color: #ffffff;
+        }
+        .nav-cell-right {
+            display: table-cell;
+            padding: 1em;
+            padding-right: 2em;
+            text-align: right;
+            font-weight: bold;
+            width: 33.3%;
+        }
+        .nav-cell-middle {
+            display: table-cell;
+            padding: 1em;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            width: 33.3%;
+        }
+        .nav-cell-left {
+            display: table-cell;
+            padding: 1em;
+            padding-left: 2em;
+            width: 33.3%;
+            text-align: left;
+            font-weight: bold;
+        }
+        .footcopy {
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="main-h1">The daily scatman</h1>
+    
+        <div class="nav">
+            <div class="nav-cell-left">Scatman.com</div>
+            <div class="nav-cell-middle">Scatman</div>
+            <div class="nav-cell-right">1.00$</div>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="headline-h1">Papope</h1>
+
+        <div class="conteiner">
+            <div class="col-1">
+                <img class="img" src="./img/scat.png" alt="scat">
+                <img class="img" src="./img/must.png" alt="must">
+            </div>
+            
+            <div class="col-2"> Papope papope papope papope papope papope papope papope papope papope papope papope
+                papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope
+                papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope
+                papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope
+                papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope
+                papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope
+                papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope
+                papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope
+                papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope
+                papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope
+                papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope
+                papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope
+                papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope
+                papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope
+                papope papope papope papope papope 
+            </div>
+
+            <div class="col-3"> Papope papope papope papope papope papope papope papope papope papope papope papope
+                papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope
+                papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope
+                papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope
+                papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope
+                papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope
+                papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope
+                papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope
+                papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope
+                papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope
+                papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope
+                papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope
+                papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope
+                papope papope papope papope papope papope papope papope papope papope papope papope papope papope papope
+                papope papope papope papope papope 
+            </div>
+        </div>    
+    </main>
+
+    <footer>
+        <p class="footcopy">
+            Laurynas Savickas &copy; 2021 All rights reserved
+        </p>
+
+        <p class="footcopy">
+            <a class="site-nav" href="https://github.com/LaurynasSavickas/praktines-uzduotys.git">Link to github
+                repository</a>
+        </p>
+    </footer>
+</body>
+</html>

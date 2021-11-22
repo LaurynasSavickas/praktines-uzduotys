@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0%;
+        }
+        .container {
+            
+            margin: 0  ;
+            display: grid;
+            height: 100vh;
+            width: 100%;
+            grid-template-columns: 0.5fr 1fr 2fr 1fr;
+            grid-template-rows: .1fr .3fr .5fr .5fr .5fr .5fr;
+            grid-template-areas: 
+                "gradient gradient gradient gradient" 
+                "header-hbcw header-hbcw header-hbcw sidebar"
+                "about-person1 about-person1 about-person1 sidebar"
+                "about-person2 about-person2 about-person2 sidebar"
+                "about-person3 about-person3 about-person3 sidebar"
+                "about-person4 about-person4 about-person4 sidebar";
+        }
+        .container-inner{
+            display: grid;
+            margin: 0%;
+            grid-template-columns: .1fr .1fr .1fr;
+            grid-template-rows: .1fr .1fr ;
+            grid-template-areas: 
+            "img-person  header-person header-person1"
+            "img-person info-person";
+
+        }
+        .gradient{
+            grid-area: gradient;
+            background: #ffffff;
+            background: linear-gradient(0deg, #ffffff 9%, #cfcfcf 100%);
+        }
+        .header-hbcw{
+            grid-area: header-hbcw;           
+        }
+        .h1-meet{
+            color: #005b70;
+        }
+        .img-person {
+            grid-area: img-person;
+            
+            width: 30%;
+                       
+        }
+        .header-person {
+            grid-area: header-person;
+            
+            background-color: #005b70;
+            color: #ffffff;
+            padding: .5rem .5rem .5rem 1rem ;
+            margin: .3rem 0rem 0rem 1rem ;
+        }
+        .header-person1 {
+            grid-area: header-person1;
+          
+            background-color: #005b70;
+            color: #46d6f7;
+            padding: .5rem 20rem .5rem .5rem ;
+            margin: .3rem 0rem 0rem 0rem ;
+        }
+        .info-person{
+            grid-area: info-person;
+            padding: 1rem 20rem 1rem 22rem ;
+            border: 2px black solid;
+           
+        }
+        .sidebar{
+            grid-area: sidebar;
+            background-color: rgb(255, 47, 255);
+        }.about-person1{
+            grid-area: about-person1;
+            background-color: rgb(47, 255, 92);
+        }.about-person2{
+            grid-area: about-person2;
+            background-color: rgb(255, 47, 47);
+        }.about-person3{
+            grid-area: about-person3;
+            background-color: rgb(59, 60, 97);
+        }.about-person4{
+            grid-area: about-person4;
+            background-color: rgb(147, 153, 138);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="gradient">gradient</div>
+        <div class="header-hbcw">
+            <h1 class="h1-meet">Meet the HBCWeb Team</h1>
+            <p class="p-meet">
+                HBCWebHBCWebHBCWebHBCWebHBCWebHBCWebHBCWebHBCWebHBCWebHBCWebHBCWebHBCWebHBCWebHBCWebHBCW
+                HBCWebebHBCWebHBCWebHBCWebHBCWebHBCWebHBCWebHBCWebHBCWebHBCWebHBCWeb
+            </p>
+        </div>
+        <div class="sidebar">sidebar</div>
+        <div class="about-person1">
+            <div class="container-inner">
+                <div class="img-person">
+                    asdasd
+                </div>
+                <div class="header-person">Rob Carling -</div>
+                <div class="header-person1">DEVELOPMENT MANAGER</div>
+                <div class="info-person">
+                    <p >asdasdasdasdasdasdasd</p>
+                </div>
+            </div>    
+        </div>
+        <div class="about-person2">about-person2</div>
+        <div class="about-person3">about-person3</div>
+        <div class="about-person4">about-person4</div>
+    </div>
+    
+</body>
+</html>

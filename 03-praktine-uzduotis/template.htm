@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+/*  ############# EMPTY ########################*/
+
+        @media screen and (max-width: 600px) { /* ------  MOBILE  ----------- */
+            
+        }
+        @media screen and (min-width: 600px) { /* ------  PC  --------------- */
+        }
+
+        
+        body {
+            background-color: burlywood;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        nav {
+            background-color: darkolivegreen;
+        }
+
+        main {
+            background-color: coral;
+            margin: 0;
+            padding: 0;
+        }
+        footer {
+            background-color: darkgoldenrod;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin: 0;
+            padding: 0;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        .clearfix {
+            display: flex;
+            content: "";
+            clear: both;
+        }
+/*  ############# BODY ########################*/
+
+        @media screen and (max-width: 600px) { /* ------  MOBILE BODY ----------- */
+            body{
+                background-color: rgb(152, 95, 160);
+            }
+        }
+        @media screen and (min-width: 600px) { /* ------  PC BODY --------------- */
+        }
+             body{
+                background-color: cadetblue;
+            }
+
+/*  ############# HEADER ########################*/   
+            
+        @media screen and (max-width: 600px) { /* ------  MOBILE HEADER  ----------- */
+            
+        }
+        @media screen and (min-width: 600px) { /* ------  PC HEADER  --------------- */
+        }  
+
+/*  ############# LOGO ########################*/
+
+        @media screen and (max-width: 600px) { /* ------  MOBILE LOGO  ----------- */
+            
+        }
+        @media screen and (min-width: 600px) { /* ------  PC LOGO  --------------- */
+            .logo {
+                width: 40%;
+                background-color: blueviolet;
+                padding: 3em;
+                float: left;
+            }
+        } 
+        
+/*  #############  BANNER ########################*/
+
+        @media screen and (max-width: 600px) { /* ------  MOBILE BANNER  ----------- */
+            .banner {
+                background-color: crimson;
+            }
+        }
+        @media screen and (min-width: 600px) { /* ------  PC BANNER  --------------- */
+            .banner {
+                width: 60%;
+                background-color: crimson;
+                padding: 3em;
+            }
+        }        
+        
+/*  ############# NAV ########################*/   
+            
+        @media screen and (max-width: 600px) { /* ------  MOBILE NAV  ----------- */
+            nav {
+                padding: 1em;
+            }
+        }
+        @media screen and (min-width: 600px) { /* ------  PC NAV  --------------- */
+            nav {
+                padding: 1em;
+            }
+            .navbutt {
+                border: 6px crimson solid; background:crimson;
+                
+        }  
+
+/*  ############# MAIN ########################*/   
+            
+        @media screen and (max-width: 600px) { /* ------  MOBILE MAIN  ----------- */
+            
+        }
+        @media screen and (min-width: 600px) { /* ------  PC MAIN  --------------- */
+        }  
+            
+/*  ############# FOOTER ########################*/   
+            
+        @media screen and (max-width: 600px) { /* ------  MOBILE FOOTER  ----------- */
+            footer {
+                background-color: green;
+            }
+        }
+        @media screen and (min-width: 600px) { /* ------  PC FOOTER  --------------- */
+            footer {
+                background-color: greenyellow;
+            }
+        }  
+
+/*  ############# COL ########################*/            
+
+        @media screen and (max-width: 600px) { /* ------  MOBILE COL  ----------- */            
+            .col-mb-1 {
+                flex: 0 0 auto;
+                width: 8.33333333%;
+            }
+            .col-mb-2 {
+                flex: 0 0 auto;
+                width: 16.66666667%;
+            }
+            .col-mb-3 {
+                flex: 0 0 auto;
+                width: 25%;
+            }
+            .col-mb-4 {
+                flex: 0 0 auto;
+                width: 33.33333333%;
+            }
+            .col-mb-5 {
+                flex: 0 0 auto;
+                width: 41.66666667%;
+            }
+            .col-mb-6 {
+                flex: 0 0 auto;
+                width: 50%;
+            }
+            .col-mb-7 {
+                flex: 0 0 auto;
+                width: 58.33333333%;
+            }
+            .col-mb-8 {
+                flex: 0 0 auto;
+                width: 66.66666667%;
+            }
+            .col-mb-9 {
+                flex: 0 0 auto;
+                width: 75%;
+            }
+            .col-mb-10 {
+                flex: 0 0 auto;
+                width: 83.33333333%;
+            }
+            .col-mb-11 {
+                flex: 0 0 auto;
+                width: 91.66666667%;
+            }
+            .col-mb-12 {
+                flex: 0 0 auto;
+                width: 100%;
+            }
+        }
+        @media screen and (min-width: 600px) { /* ------  PC COL  --------------- */
+             .col-pc-1 {
+                flex: 0 0 auto;
+                width: 8.33333333%;
+            }
+            .col-pc-2 {
+                flex: 0 0 auto;
+                width: 16.66666667%;
+            }
+            .col-pc-3 {
+                flex: 0 0 auto;
+                width: 25%;
+            }
+            .col-pc-4 {
+                flex: 0 0 auto;
+                width: 33.33333333%;
+            }
+            .col-pc-5 {
+                flex: 0 0 auto;
+                width: 41.66666667%;
+            }
+            .col-pc-6 {
+                flex: 0 0 auto;
+                width: 50%;
+            }
+            .col-pc-7 {
+                flex: 0 0 auto;
+                width: 58.33333333%;
+            }
+            .col-pc-8 {
+                flex: 0 0 auto;
+                width: 66.66666667%;
+            }
+            .col-pc-9 {
+                flex: 0 0 auto;
+                width: 75%;
+            }
+            .col-pc-10 {
+                flex: 0 0 auto;
+                width: 83.33333333%;
+            }
+            .col-pc-11 {
+                flex: 0 0 auto;
+                width: 91.66666667%;
+            }
+            .col-pc-12 {
+                flex: 0 0 auto;
+                width: 100%;
+            }
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <header class="clearfix">
+        <div class="logo"><a  href="template.htm">Logo</a></div>
+        <div class="banner">Banner</div>
+    </header>
+
+    <nav class="nav">
+        <a class="navbutt" href="template.htm">Navigation</a>
+        <a class="navbutt" href="template.htm">Navigation</a>
+        <a class="navbutt" href="template.htm">Navigation</a>
+        <a class="navbutt" href="template.htm">Navigation</a>
+        <a class="navbutt" href="template.htm">Navigation</a>
+        <a class="navbutt" href="template.htm">Navigation</a>
+    </nav>
+
+    <main>
+        <h1>Main Header</h1>
+    </main>
+
+    <footer>
+        <p> Footer</p>
+    </footer>
+    
+</body>
+</html>
