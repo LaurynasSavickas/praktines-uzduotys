@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,91 +12,110 @@
             margin: 0%;
         }
         .container {
-            
-            margin: 0  ;
+            margin: 0;
             display: grid;
-            height: 100vh;
+            height:100vh ;
             width: 100%;
-            grid-template-columns: 0.5fr 1fr 2fr 1fr;
-            grid-template-rows: .1fr .3fr .5fr .5fr .5fr .5fr;
-            grid-template-areas: 
-                "gradient gradient gradient gradient" 
-                "header-hbcw header-hbcw header-hbcw sidebar"
-                "about-person1 about-person1 about-person1 sidebar"
-                "about-person2 about-person2 about-person2 sidebar"
-                "about-person3 about-person3 about-person3 sidebar"
-                "about-person4 about-person4 about-person4 sidebar";
+            grid-template-columns: 10% 75% 15%;
+            grid-template-rows: 3% 12% 21.25% 21.25% 21.25% 21.25%;
+            grid-template-areas:
+                "gradient gradient gradient"
+                "header-hbcw header-hbcw sidebar"
+                "about-person1 about-person1 sidebar"
+                "about-person2 about-person2 sidebar"
+                "about-person3 about-person3 sidebar"
+                "about-person4 about-person4 sidebar";
         }
-        .container-inner{
+        .container-inner {
             display: grid;
             margin: 0%;
-            grid-template-columns: .1fr .1fr .1fr;
-            grid-template-rows: .1fr .1fr ;
-            grid-template-areas: 
-            "img-person  header-person header-person1"
-            "img-person info-person";
-
+            grid-template-columns: 20% 80%;
+            grid-template-rows: 25% 75%;
+            grid-template-areas:
+                "img-person  header-person"
+                "img-person info-person";
         }
-        .gradient{
+        .gradient {
             grid-area: gradient;
             background: #ffffff;
             background: linear-gradient(0deg, #ffffff 9%, #cfcfcf 100%);
         }
-        .header-hbcw{
-            grid-area: header-hbcw;           
+        .header-hbcw {
+            grid-area: header-hbcw;
         }
-        .h1-meet{
+        .h1-meet {
+            margin: 0;
             color: #005b70;
+            padding: .5rem 0rem 0rem 1rem;
         }
-        .img-person {
-            grid-area: img-person;
-            
-            width: 30%;
-                       
+        .p-meet{
+            margin: 0rem 0rem 0rem 0rem ;
+            padding: .5rem 0rem 0rem 1rem;
+        }
+        .img-box {
+            grid-area: img-person; 
+            /*border: 1px black solid;*/
+        }
+        .photo-person {
+            width: 15rem;
+            padding: .5rem .5rem .5rem .5rem;
+            border: 3px #585858 solid;
+            margin: 0.5rem 1rem 0rem 1rem;
+        }
+        .header-box {
+            grid-area: header-person;
+            /*border: 1px rgb(52, 177, 3) solid;*/
         }
         .header-person {
-            grid-area: header-person;
-            
             background-color: #005b70;
             color: #ffffff;
-            padding: .5rem .5rem .5rem 1rem ;
-            margin: .3rem 0rem 0rem 1rem ;
+            padding: .5rem .5rem .5rem .5rem;
+            margin: .5rem 0rem 1rem 1rem;
+            /*border: 1px black solid;*/
+            width: 90%;
         }
-        .header-person1 {
-            grid-area: header-person1;
-          
-            background-color: #005b70;
-            color: #46d6f7;
-            padding: .5rem 20rem .5rem .5rem ;
-            margin: .3rem 0rem 0rem 0rem ;
+        .header-person1{
+            display: inline;
+            color: #42d5f7;
+            margin: .3rem 0rem 1rem 0rem;
+            
         }
-        .info-person{
+        .info-box {
             grid-area: info-person;
-            padding: 1rem 20rem 1rem 22rem ;
-            border: 2px black solid;
-           
+            /*border: 1px rgb(253, 0, 0) solid;*/
         }
-        .sidebar{
+        .info-person {
+            padding: 1rem 1rem 1rem 1rem;
+            /*border: 2px black solid;*/
+            margin: .1rem 1rem 1rem 1rem;
+            width: 88.5%;
+        }
+        .sidebar {
             grid-area: sidebar;
-            background-color: rgb(255, 47, 255);
-        }.about-person1{
+            /*background-color: rgb(255, 47, 255);*/
+        }
+        .about-person1 {
             grid-area: about-person1;
-            background-color: rgb(47, 255, 92);
-        }.about-person2{
+            /*background-color: rgb(243, 255, 82);*/
+        }
+        .about-person2 {
             grid-area: about-person2;
-            background-color: rgb(255, 47, 47);
-        }.about-person3{
+            /*background-color: rgb(255, 47, 47);*/
+        }
+        .about-person3 {
             grid-area: about-person3;
-            background-color: rgb(59, 60, 97);
-        }.about-person4{
+            /*background-color: rgb(59, 60, 97);*/
+        }
+        .about-person4 {
             grid-area: about-person4;
-            background-color: rgb(147, 153, 138);
+            /*background-color: rgb(147, 153, 138);*/
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <div class="gradient">gradient</div>
+        <div class="gradient"></div>
         <div class="header-hbcw">
             <h1 class="h1-meet">Meet the HBCWeb Team</h1>
             <p class="p-meet">
@@ -106,20 +126,107 @@
         <div class="sidebar">sidebar</div>
         <div class="about-person1">
             <div class="container-inner">
-                <div class="img-person">
-                    asdasd
+                <div class="img-box">
+                    <img class="photo-person" src="./img/rob.png" alt="scat">
                 </div>
-                <div class="header-person">Rob Carling -</div>
-                <div class="header-person1">DEVELOPMENT MANAGER</div>
-                <div class="info-person">
-                    <p >asdasdasdasdasdasdasd</p>
+                <div class="header-box">
+                    <div class="header-person">ROB CARLING -
+                        <div class="header-person1">DEVELOPMENT MANAGER</div>
+                    </div>
+                    
                 </div>
-            </div>    
+                
+                <div class="info-box">
+                    <p class="info-person">asdasdasdasdasdasdasd sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj
+                        sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj
+                        sadhj sadhj sadhj
+                        sadhj sadhj sadhj sadhj sadhj sadhj sad sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj
+                        sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj
+                        sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj
+                        sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj
+                        sadhj sadhj sadhj sadhj sadhj sadhj sadhj</p>
+                </div>
+            </div>
         </div>
-        <div class="about-person2">about-person2</div>
-        <div class="about-person3">about-person3</div>
-        <div class="about-person4">about-person4</div>
+        <div class="about-person2">
+            <div class="container-inner">
+                <div class="img-box">
+                    <img class="photo-person" src="./img/scat.png" alt="scat">
+                </div>
+                <div class="header-box">
+                    <div class="header-person">ROB CARLING -
+                        <div class="header-person1">DEVELOPMENT MANAGER</div>
+                    </div>
+                    
+                </div>
+                
+                <div class="info-box">
+                    <p class="info-person">asdasdasdasdasdasdasd sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj
+                        sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj
+                        sadhj sadhj sadhj
+                        sadhj sadhj sadhj sadhj sadhj sadhj sad sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj
+                        sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj
+                        sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj
+                        sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj
+                        sadhj sadhj sadhj sadhj sadhj sadhj sadhj</p>
+                </div>
+            </div>
+        </div>
+            
+        <div class="about-person3">
+            <div class="container-inner">
+                <div class="img-box">
+                    <img class="photo-person" src="./img/scat.png" alt="scat">
+                </div>
+                <div class="header-box">
+                    <div class="header-person">ROB CARLING -
+                        <div class="header-person1">DEVELOPMENT MANAGER</div>
+                    </div>
+                    
+                </div>
+                
+                <div class="info-box">
+                    <p class="info-person">asdasdasdasdasdasdasd sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj
+                        sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj
+                        sadhj sadhj sadhj
+                        sadhj sadhj sadhj sadhj sadhj sadhj sad sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj
+                        sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj
+                        sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj
+                        sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj
+                        sadhj sadhj sadhj sadhj sadhj sadhj sadhj</p>
+                </div>
+            </div>
+        </div>
+        <div class="about-person4">
+            <div class="container-inner">
+                <div class="img-box">
+                    <img class="photo-person" src="./img/scat.png" alt="scat">
+                </div>
+                <div class="header-box">
+                    <div class="header-person">ROB CARLING -
+                        <div class="header-person1">DEVELOPMENT MANAGER</div>
+                    </div>
+                    
+                </div>
+                
+                <div class="info-box">
+                    <p class="info-person">asdasdasdasdasdasdasd sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj
+                        sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj
+                        sadhj sadhj sadhj
+                        sadhj sadhj sadhj sadhj sadhj sadhj sad sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj
+                        sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj
+                        sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj
+                        sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj sadhj
+                        sadhj sadhj sadhj sadhj sadhj sadhj sadhj</p>
+                </div>
+            </div>
+        </div>
     </div>
-    
+
+
+
+ 
+
 </body>
+
 </html>
