@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down Links</title>
+    <style>
+        div > a{
+            display: block;
+        }
+     </style>
+</head>
+<body>
+    <button type="button" id="myButton" > More</button>
+    <div class="dropMenu">
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="">Link</a>
+    </div>
+    <script>
+        const myButton = document.querySelector('#myButton');
+        const links = document.querySelector('.dropMenu');
+    
+        myButton.addEventListener('click', () => {
+            if(links.style.display == 'none'){
+                links.style.display ='block';
+                myButton.innerHTML = 'Less';
+            } 
+            else{
+                links.style.display ='none';
+                myButton.innerHTML = 'More';
+            }
+        });    
+    </script>
+</body>
+</html>
