@@ -5,8 +5,278 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        div{
+            line-height: 35px;
+        }
+        .conteiner{
+            display: table;               
+        }
+        #demo{
+            display: table-cell;
+            height: 200px;
+            width: 200px;
+            color: #ffebcd;
+            background-color: #000000; 
+            border: 3px #ff0000 solid;
+            vertical-align: middle; 
+            text-align: center;
+            font-size: 16px;                
+        }
+        .size{
+           display: inline;
+        }
+        .style{
+            display: inline;
+        }
+    </style>
+
 </head>
 <body>
+
+<!--//////////// MANIPULATOR \\\\\\\\\\\\\-->
+               <!--////\\\\-->
+
+
+<!-- -----CONTENT----- -->
+
+    <div class="input">Content :
+        <input type="text" id="myInput" oninput="funcInput()" value="Text">
+    </div>
+
+<!-- -----SIZE----- -->
     
+    <div class="size">Size :
+        <input type="number" id="mySize" oninput="funcSize()" value="16" min="16" max="99" maxlength="2"> 
+    </div>
+
+<!-- -----STYLE----- -->
+
+    <div class="style">Style :
+        <input type="checkBox" id="myCheckB" onclick="funcCheckB()">Bold 
+        <input type="checkBox" id="myCheckI" onclick="funcCheckI()">Italic
+        <input type="checkBox" id="myCheckU" onclick="funcCheckU()">Underline
+    </div>
+
+<!-- -----WIDTH----- -->
+
+    <div class="width">Width
+        <input type="text" id="myWidth" oninput="funcWidth()" value="200px">
+    </div>
+<!-- -----HEIGHT----- -->
+
+    <div class="height">Height
+        <input type="text" id="myHeight" oninput="funcHeight()" value="200px">
+    </div>
+
+<!-- -----ALIGN-HORIZONTAL----- -->
+
+    <div class="alignH">Align :
+        <input type="radio" name="chGr" id="myRadioL" onclick="funcRadioL()">Left
+        <input type="radio" name="chGr" id="myRadioM" onclick="funcRadioM()" checked>Middle
+        <input type="radio" name="chGr" id="myRadioR" onclick="funcRadioR()">Right
+    </div>
+
+<!-- -----ALIGN-VERTICAL----- -->
+
+    <div class="alignV">Vertical :
+        <input type="radio" name="chGr1" id="myRadioT" onclick="funcRadioT()">Top
+        <input type="radio" name="chGr1" id="myRadioC" onclick="funcRadioC()" checked>Middle
+        <input type="radio" name="chGr1" id="myRadioB" onclick="funcRadioB()">Bottom
+    </div>
+
+<!-- -----COLORS AND SIZE----- -->
+
+    <div class="colors">
+        Text color : <input type="color" name="textColor" id="textCol" onchange="funcColText()" value="#ffebcd">
+        Background color : <input type="color" name="backgroundColor" id="backCol" onchange="funcColBack()">
+        Border color : <input type="color" name="borderColor" id="borderCol" onchange="funcColBord()" value="#ff0000">
+        Size : <input type="range" id="borderSiz" onclick="funcSizeBord()" min="0" max="20" value="3">
+    </div>
+
+<!-- -----PADDING----- -->
+
+    <div class="padding">
+        Padding : <input type="range" id="myPadd" onclick="funcPadd()" min="0" max="50" value="0">
+    </div>
+
+<!-- -----DEMO UNIT----- -->
+
+    <div class="conteiner">
+        <div id="demo">Text</div>
+    </div>
+
+
+<!--//////////// SCRIPTS \\\\\\\\\\\\\-->
+             <!--////\\\\--> 
+
+    
+    <script>
+
+///// SHORCUTS //////
+
+        var getDemo = document.getElementById('demo');
+
+////// INPUT ///////
+
+        function funcInput(){
+            var inp = document.getElementById('myInput').value;
+            getDemo.innerHTML = inp;
+        }
+
+////// SIZE ///////
+
+        function funcSize(){
+            var siz = document.getElementById('mySize').value;
+            getDemo.style.fontSize = siz + 'px';
+        }
+
+////// WIDTH ///////
+
+        function funcWidth(){
+            var wid = document.getElementById('myWidth').value;
+            getDemo.style.width = wid + 'px';            
+        }
+
+////// HEIGHT ///////
+
+        function funcHeight(){
+            var hei = document.getElementById('myHeight').value;
+            getDemo.style.height = hei + 'px';            
+        }
+
+////// STYLE ///////
+
+        // BOLD 
+        function funcCheckB(){
+            var chB = document.getElementById('myCheckB').value;
+            var checkBox = document.getElementById('myCheckB');
+
+            if(checkBox.checked == true){
+                getDemo.style.fontWeight = 'bold';
+            } else {
+                getDemo.style.fontWeight = 'normal';
+            }        
+        }
+
+        // ITALIC 
+        function funcCheckI(){
+            var chI = document.getElementById('myCheckI').value;
+            var checkBox = document.getElementById('myCheckI');
+
+            if(checkBox.checked == true){
+                getDemo.style.fontStyle = 'italic';
+            } else {
+                getDemo.style.fontStyle = 'normal';
+            }
+        }
+        
+        // UNDERLINE 
+        function funcCheckU(){
+            var chU = document.getElementById('myCheckU').value;
+            var checkBox = document.getElementById('myCheckU');
+
+            if(checkBox.checked == true){
+                getDemo.style.textDecoration = 'underline';
+            } else {
+                getDemo.style.textDecoration = 'none';
+            }            
+        }
+
+////// ALIGN-HORIZONTAL ///////
+
+        //LELFT
+        function funcRadioL(){
+            var rdL = document.getElementById('myRadioL').value;
+            var checkBox = document.getElementById('myRadioL');
+
+            if(checkBox.checked == true){
+                getDemo.style.textAlign = 'left';
+            }
+        }
+        // MIDDLE
+        function funcRadioM(){
+            var rdM = document.getElementById('myRadioM').value;
+            var checkBox = document.getElementById('myRadioM');
+            
+            if(checkBox.checked == true){
+                getDemo.style.textAlign = 'center';
+            }
+        }
+        // MIDDLE
+        function funcRadioR(){
+            var rdM = document.getElementById('myRadioR').value;
+            var checkBox = document.getElementById('myRadioR');
+            
+            if(checkBox.checked == true){
+                getDemo.style.textAlign = 'right';
+            }
+        }
+
+////// ALIGN-VERTICAL ///////
+
+        //LELFT
+        function funcRadioT(){
+            var rdT = document.getElementById('myRadioT').value;
+            var checkBox = document.getElementById('myRadioT');
+
+            if(checkBox.checked == true){
+                getDemo.style.verticalAlign = 'top';
+            }
+        }
+        // MIDDLE
+        function funcRadioC(){
+            var rdM = document.getElementById('myRadioC').value;
+            var checkBox = document.getElementById('myRadioC');
+            
+            if(checkBox.checked == true){
+                getDemo.style.verticalAlign = 'middle';
+            }
+        }
+        // MIDDLE
+        function funcRadioB(){
+            var rdM = document.getElementById('myRadioB').value;
+            var checkBox = document.getElementById('myRadioB');
+            
+            if(checkBox.checked == true){
+                getDemo.style.verticalAlign = 'bottom';
+            }
+        } 
+
+////// COLORS AND SIZE ///////
+
+        //TEXT
+        function funcColText(){
+            var cTe = document.getElementById('textCol').value;
+            getDemo.style.color = cTe;
+        }
+        //BACKGROUND 
+        function funcColBack(){
+            var cBa = document.getElementById('backCol').value;
+            getDemo.style.backgroundColor = cBa;
+        }
+        //BORDER
+        function funcColBord(){
+            var cBo = document.getElementById('borderCol').value;
+            getDemo.style.borderColor = cBo;
+        }
+        // BORDER SIZE
+        function funcSizeBord(){
+            var sBo = document.getElementById('borderSiz').value;
+            getDemo.style.borderWidth = sBo + 'px';
+        }
+
+////// PADDING ///////
+
+        function funcPadd(){
+            var pad = document.getElementById('myPadd').value;
+            getDemo.style.padding = pad + 'px';
+        }
+
+    </script>
 </body>
 </html>
